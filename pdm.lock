@@ -15,6 +15,12 @@ requires_python = ">=3.6"
 summary = "ASGI specs, helper code, and adapters"
 
 [[package]]
+name = "Chameleon"
+version = "3.9.1"
+requires_python = ">=2.7,!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*"
+summary = "Fast HTML/XML Template Compiler."
+
+[[package]]
 name = "click"
 version = "8.0.3"
 requires_python = ">=3.6"
@@ -37,6 +43,15 @@ summary = "FastAPI framework, high performance, easy to learn, fast to code, rea
 dependencies = [
     "pydantic!=1.7,!=1.7.1,!=1.7.2,!=1.7.3,!=1.8,!=1.8.1,<2.0.0,>=1.6.2",
     "starlette==0.16.0",
+]
+
+[[package]]
+name = "fastapi-chameleon"
+version = "0.1.12"
+summary = "Adds integration of the Chameleon template language to FastAPI."
+dependencies = [
+    "Chameleon",
+    "fastapi",
 ]
 
 [[package]]
@@ -92,7 +107,7 @@ dependencies = [
 
 [metadata]
 lock_version = "3.1"
-content_hash = "sha256:e49ce418ecb81e550403d8caf2bfd16b7ae32c3684f279b8bb47586291f06cef"
+content_hash = "sha256:03194c64493d2446a2214c1267f33fe8f67e9ade220456b94442ce938881a5b8"
 
 [metadata.files]
 "anyio 3.3.4" = [
@@ -102,6 +117,9 @@ content_hash = "sha256:e49ce418ecb81e550403d8caf2bfd16b7ae32c3684f279b8bb4758629
 "asgiref 3.4.1" = [
     {file = "asgiref-3.4.1-py3-none-any.whl", hash = "sha256:ffc141aa908e6f175673e7b1b3b7af4fdb0ecb738fc5c8b88f69f055c2415214"},
     {file = "asgiref-3.4.1.tar.gz", hash = "sha256:4ef1ab46b484e3c706329cedeff284a5d40824200638503f5768edb6de7d58e9"},
+]
+"chameleon 3.9.1" = [
+    {file = "Chameleon-3.9.1.tar.gz", hash = "sha256:52e0922702798486419c4d8bcb7d0b9d3e0629ee305c459180c688eb03ba445f"},
 ]
 "click 8.0.3" = [
     {file = "click-8.0.3-py3-none-any.whl", hash = "sha256:353f466495adaeb40b6b5f592f9f91cb22372351c84caeb068132442a4518ef3"},
@@ -114,6 +132,9 @@ content_hash = "sha256:e49ce418ecb81e550403d8caf2bfd16b7ae32c3684f279b8bb4758629
 "fastapi 0.70.0" = [
     {file = "fastapi-0.70.0-py3-none-any.whl", hash = "sha256:a36d5f2fad931aa3575c07a3472c784e81f3e664e3bb5c8b9c88d0ec1104f59c"},
     {file = "fastapi-0.70.0.tar.gz", hash = "sha256:66da43cfe5185ea1df99552acffd201f1832c6b364e0f4136c0a99f933466ced"},
+]
+"fastapi-chameleon 0.1.12" = [
+    {file = "fastapi_chameleon-0.1.12-py3-none-any.whl", hash = "sha256:575afad248e54c092a598b918ea1600cf2d1bda1fa02f7da1c4d98f26c6cc327"},
 ]
 "h11 0.12.0" = [
     {file = "h11-0.12.0-py3-none-any.whl", hash = "sha256:36a3cb8c0a032f56e2da7084577878a035d3b61d104230d4bd49c0c6b555a9c6"},
